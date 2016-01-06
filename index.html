@@ -1,14 +1,46 @@
 <!DOCTYPE html> 
 <html>
 	<head>
-		<title>Polymer Test</title>
-	<script type="text/javascript"
-  src="bower_components/webcomponentsjs/webcomponents.min.js">
-</script>
-<link rel="import" href="elements/hello-udacity.html">
-	
+        
+        <!-- Polymer -->
+        <link rel="import" href="elements/hello-udacity.html">
+        <!-- CSS Libraries -->
+        <link rel="stylesheet" type="text/css" href="bower_components\bootstrap\dist\css\bootstrap.min.css">
+        
     </head>
-	<body>
-		
+	<body class="container-fluid">
+		<header>
+            <h1>CHANDLER WILSON</h1>
+            <h3>FRONT-END STUDENT</h3>
+            <img src="https://placehold.it/150x150" alt="Chandler's Logo'" class="logo">
+		</header>
+        <nav>
+            <!-- put bootstrap navbar here -->
+        </nav>
+        <section>
+            <img src="https://placehold.it/500x300" alt="coding your future" class="img-centerpiece">
+        </section>
+        <article class="projects-display row">
+            <div class="projects-label">
+                <h2>Featured Work</h2>
+            </div>
+            <div class="project-frogger col-xs-6 col-md-3 thumbnail">
+                <img src="https://placehold.it/500x300" alt="THIS IS FROGGER!!" class="img-frogger">
+                <h3>Frogger</h3>
+                <p>I created a clone of the classic Frogger game using javascript</p>               
+            </div>
+            <div class="project-map col-xs-6 col-md-3 thumbnail">
+                <img src="https://placehold.it/500x300" alt="Map of Lago Vista" class="img-map">
+                <h3>Neighborhood Map</h3>
+                <p>This is a customized map of a Lago Vista neighborhood</p>
+            </div>
+            <div class="project-dota col-xs-6 col-md-3 thumbnail">
+                <img src="https://placehold.it/500x300" alt="Stats Chart" class="img-chart">
+                <h3>DOTA Synergy</h3>
+                <p>Team based stats and management</p>
+            </div>
+        </article>
+        <!--Javascript Libraries -->
+        <script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
 	</body>
 </html>
