@@ -8,36 +8,45 @@
         <link rel="stylesheet" type="text/css" href="bower_components\bootstrap\dist\css\bootstrap.min.css">
         
     </head>
-	<body class="container-fluid">
-		<header>
-            <h1>CHANDLER WILSON</h1>
-            <h3>FRONT-END STUDENT</h3>
-            <img src="https://placehold.it/150x150" alt="Chandler's Logo'" class="logo">
+	<body class="container">
+		<header class="row">
+            <div class="col-md-6">
+                <img src="https://placehold.it/150x150" alt="Chandler's Logo'" class="img-responsive logo">
+            </div>
+            <div class="col-md-6 text-right text-bold">
+                <h1>CHANDLER WILSON</h1>
+                <h3>FRONT-END STUDENT</h3>
+            </div>
 		</header>
-        <nav>
+        <nav class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
             <!-- put bootstrap navbar here -->
         </nav>
-        <section>
-            <img src="https://placehold.it/500x300" alt="coding your future" class="img-centerpiece">
+        <section class="row">
+            <div class="col-md-12">
+                <img src="https://placehold.it/1250x350" alt="coding your future" class="img-responsive img-centerpiece">
+            </div>
         </section>
         <article class="projects-display row">
-            <div class="projects-label">
+            <div class="projects-label col-md-12">
                 <h2>Featured Work</h2>
             </div>
-            <div class="project-frogger col-xs-6 col-md-3 thumbnail">
-                <img src="https://placehold.it/500x300" alt="THIS IS FROGGER!!" class="img-frogger">
+            <div class="project-frogger col-md-4 text-center">
+                <img src="https://placehold.it/500x300" alt="THIS IS FROGGER!!" class="img-frogger img-responsive">
                 <h3>Frogger</h3>
-                <p>I created a clone of the classic Frogger game using javascript</p>               
+                <a href="https://github.com/chandler9wilson">github.com</a>             
             </div>
-            <div class="project-map col-xs-6 col-md-3 thumbnail">
-                <img src="https://placehold.it/500x300" alt="Map of Lago Vista" class="img-map">
+            <div class="project-map col-md-4 text-center">
+                <img src="https://placehold.it/500x300" alt="Map of Lago Vista" class="img-map img-responsive">
                 <h3>Neighborhood Map</h3>
-                <p>This is a customized map of a Lago Vista neighborhood</p>
+                <a href="https://github.com/chandler9wilson">github.com</a>
             </div>
-            <div class="project-dota col-xs-6 col-md-3 thumbnail">
-                <img src="https://placehold.it/500x300" alt="Stats Chart" class="img-chart">
+            <div class="project-dota col-md-4 text-center">
+                <img src="https://placehold.it/500x300" alt="Stats Chart" class="img-chart img-responsive">
                 <h3>DOTA Synergy</h3>
-                <p>Team based stats and management</p>
+                <a href="http://dotasynergy.com">dotasynergy.com</a>
             </div>
         </article>
         <!--Javascript Libraries -->
