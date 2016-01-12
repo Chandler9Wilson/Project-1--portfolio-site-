@@ -1,12 +1,14 @@
 <!DOCTYPE html> 
 <html>
 	<head>
-        
+        <title>Chandler's Portfolio</title>
         <!-- Polymer -->
         <link rel="import" href="elements/hello-udacity.html">
         <!-- CSS Libraries -->
         <link rel="stylesheet" type="text/css" href="bower_components\bootstrap\dist\css\bootstrap.min.css">
-        
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,100' rel='stylesheet' type='text/css'>
+        <!-- Customized CSS -->
+        <link href="css/landing_page.css" rel="stylesheet" type="text/css"
     </head>
 	<body class="container">
 		<header class="row">
@@ -14,7 +16,7 @@
                 <img src="https://placehold.it/150x150" alt="Chandler's Logo'" class="img-responsive logo">
             </div>
             <div class="col-md-6 text-right text-bold">
-                <h1>CHANDLER WILSON</h1>
+                <h1 class="text-thin text-title">CHANDLER WILSON</h1>
                 <h3>FRONT-END STUDENT</h3>
             </div>
 		</header>
@@ -26,27 +28,28 @@
         </nav>
         <section class="row">
             <div class="col-md-12">
-                <img src="https://placehold.it/1250x350" alt="coding your future" class="img-responsive img-centerpiece">
+                <img src="images/austin_skyline.jpg" alt="Austin is great" class="img-responsive img-centerpiece">
             </div>
         </section>
         <article class="projects-display row">
             <div class="projects-label col-md-12">
-                <h2>Featured Work</h2>
+                <h2 class="text-muted">Featured Work</h2>
+                <hr>
             </div>
             <div class="project-frogger col-md-4 text-center">
-                <img src="https://placehold.it/500x300" alt="THIS IS FROGGER!!" class="img-frogger img-responsive">
-                <h3>Frogger</h3>
-                <a href="https://github.com/chandler9wilson">github.com</a>             
+                <img src="images/frogger.png" alt="THIS IS FROGGER!!" class="img-frogger img-responsive center-block">
+                <h3 class="text-heading">Frogger</h3>
+                <a class="text-link" href="https://github.com/chandler9wilson">github.com</a>             
             </div>
             <div class="project-map col-md-4 text-center">
-                <img src="https://placehold.it/500x300" alt="Map of Lago Vista" class="img-map img-responsive">
-                <h3>Neighborhood Map</h3>
-                <a href="https://github.com/chandler9wilson">github.com</a>
+                <img src="images/lago_vista.png" alt="Map of Lago Vista" class="img-map img-responsive center-block">
+                <h3 class="text-heading">Neighborhood Map</h3>
+                <a class="text-link" href="https://github.com/chandler9wilson">github.com</a>
             </div>
             <div class="project-dota col-md-4 text-center">
-                <img src="https://placehold.it/500x300" alt="Stats Chart" class="img-chart img-responsive">
-                <h3>DOTA Synergy</h3>
-                <a href="http://dotasynergy.com">dotasynergy.com</a>
+                <img src="images/stats_placeholder.png" alt="Stats Chart" class="img-chart img-responsive center-block">
+                <h3 class="text-heading">DOTA Synergy</h3>
+                <a class="text-link" href="http://dotasynergy.com">dotasynergy.com</a>
             </div>
         </article>
         <!--Javascript Libraries -->
