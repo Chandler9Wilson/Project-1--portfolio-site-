@@ -2,7 +2,7 @@
 <html>
 	<head>
         <title>Chandler's Portfolio</title>
-        <link rel="shortcut-icon" href="images/cw_logo.png">
+        <link rel="icon" type="image/png" href="images/cw_logo-favicon.png">
         <!-- Polymer -->
         <link rel="import" href="elements/hello-udacity.html">
         <!-- CSS Libraries -->
@@ -22,10 +22,55 @@
             </div>
 		</header>
         <nav class="row">
-            <div class="col-md-12">
-                
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
             </div>
-            <!-- put bootstrap navbar here -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </nav>
         <section class="row">
             <div class="col-md-12">
@@ -48,14 +93,32 @@
                 <a class="text-link" href="https://github.com/chandler9wilson">github.com</a>
             </div>
             <div class="project-dota col-md-4 text-center">
-                <img src="images/stats_placeholder.png" alt="Stats Chart" class="img-chart img-responsive center-block">
+                <img src="images/stats_placeholder.png" alt="Stats Chart" class="img-chart img-responsive center-block" data-toggle="modal" data-target="dotasynergy">
                 <h3 class="text-heading">DOTA Synergy</h3>
                 <a class="text-link" href="http://dotasynergy.com">dotasynergy.com</a>
             </div>
         </article>
+        <!-- Modals -->
+        <!-- Dota synergy Modal -->
+        <div class="modal fade" id="dotasynergy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="images/555.jpeg">
+                        This was my first project in this class. I learned a lot about HTML and CSS.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--Javascript Libraries -->
         <script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
-        <script type="text/javascript" src="bower_components\bootstrap\js"></script>
+        <script type="text/javascript" src="bower_components\bootstrap\dist\js\bootstrap.min.js"></script>
         <script type="text/javascript" src="bower_components\jquery\dist\jquery.min.js"></script>
 	</body>
 </html>
