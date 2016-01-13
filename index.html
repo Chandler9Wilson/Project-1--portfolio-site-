@@ -3,6 +3,8 @@
 	<head>
         <title>Chandler's Portfolio</title>
         <link rel="icon" type="image/png" href="images/cw_logo-favicon.png">
+        <!-- Meta tags -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <!-- Polymer -->
         <link rel="import" href="elements/hello-udacity.html">
         <!-- CSS Libraries -->
@@ -83,17 +85,17 @@
                 <hr>
             </div>
             <div class="project-frogger col-md-4 text-center">
-                <img src="images/frogger.png" alt="THIS IS FROGGER!!" class="img-frogger img-responsive center-block">
+                <img src="images/frogger.png" alt="THIS IS FROGGER!!" class="img-frogger img-responsive center-block" data-toggle="modal" data-target="#frogger"">
                 <h3 class="text-heading">Frogger</h3>
                 <a class="text-link" href="https://github.com/chandler9wilson">github.com</a>             
             </div>
             <div class="project-map col-md-4 text-center">
-                <img src="images/lago_vista.png" alt="Map of Lago Vista" class="img-map img-responsive center-block">
+                <img src="images/lago_vista.png" alt="Map of Lago Vista" class="img-map img-responsive center-block" data-toggle="modal" data-target="#map">
                 <h3 class="text-heading">Neighborhood Map</h3>
                 <a class="text-link" href="https://github.com/chandler9wilson">github.com</a>
             </div>
             <div class="project-dota col-md-4 text-center">
-                <img src="images/stats_placeholder.png" alt="Stats Chart" class="img-chart img-responsive center-block" data-toggle="modal" data-target="dotasynergy">
+                <img src="images/stats_placeholder.png" alt="Stats Chart" class="img-chart img-responsive center-block" data-toggle="modal" data-target="#dotasynergy">
                 <h3 class="text-heading">DOTA Synergy</h3>
                 <a class="text-link" href="http://dotasynergy.com">dotasynergy.com</a>
             </div>
@@ -116,9 +118,44 @@
                 </div>
             </div>
         </div>
+        <!-- Neighborhood Map Modal -->
+        <div class="modal fade" id="map" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="images/555.jpeg">
+                        This was my first project in this class. I learned a lot about HTML and CSS.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Frogger Modal -->
+        <div class="modal fade" id="frogger" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="images/555.jpeg">
+                        This was my first project in this class. I learned a lot about HTML and CSS.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--Javascript Libraries -->
         <script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
-        <script type="text/javascript" src="bower_components\bootstrap\dist\js\bootstrap.min.js"></script>
         <script type="text/javascript" src="bower_components\jquery\dist\jquery.min.js"></script>
+        <script type="text/javascript" src="bower_components\bootstrap\dist\js\bootstrap.min.js"></script>
+        
 	</body>
 </html>
